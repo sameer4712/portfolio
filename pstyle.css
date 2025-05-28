@@ -133,10 +133,14 @@ body {
 .profile img:hover {
   transform: rotate(2s);
 }
+.main_left img:hover{
+  scale: 1.1;
+  transition: 0.2s ease;
+}
 
 .profile img {
   width: 300px;
-  border-radius: 50px;
+  border-radius: 130px 20px;
 }
 
 .scroll img {
@@ -160,7 +164,7 @@ body {
 
 .scroll:hover {
   scale: 1.1;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .about_section {
@@ -558,7 +562,7 @@ p {
 }
 
 .foot-2 {
-  width: 60%;
+  width: 70%;
 }
 
 .foot-2 a {
