@@ -213,7 +213,7 @@ body {
 
 .mark {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -383,8 +383,8 @@ body {
 }
 
 .work img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .pro {
@@ -527,26 +527,24 @@ body {
   padding-left: 5px;
 }
 footer {
-  height: 200px;
+  width: 100%;
   background-color: #5757e0;
-  padding: 20px 0;
-}
-
-.last {
-  display: flex;
+  padding: 50px 0;
 }
 
 .foot-1 {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  gap: 10px;
 }
 
 #foot {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  max-width: 1200px;
+  width: 55%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
 }
 
 .foot-1 h1,
@@ -555,16 +553,11 @@ footer {
 }
 
 .foot-1 h1 {
-  font-size: 40px;
-  padding-right: 80px;
-}
-
-.foot-1 p {
-  font-size: 18px;
+  font-size: 34px;
 }
 
 .foot-2 {
-  width: 60%;
+  width: 300px;
 }
 
 .foot-2 a {
@@ -573,18 +566,16 @@ footer {
 }
 
 .foot-2 ul {
-  padding-top: 15px;
   list-style: none;
   display: flex;
+  justify-content: space-around;
   gap: 20px;
 }
 
 .foot-3 {
-  padding-top: 60px;
+  padding-top: 70px;
   color: rgb(152, 146, 146);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .foot-2 a:hover {
@@ -607,6 +598,9 @@ footer {
   .about_section {
     gap: 80px;
   }
+  .profile img{
+    margin-top: -100px;
+  }
   .mark {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -620,10 +614,7 @@ footer {
   .fill-in {
     gap: 30px;
   }
-  .fill-in .right .l input {
-    width: 10px;
-    padding: 2px 4px 4px 0px;
-  }
+
   .right .l {
     width: 250px;
   }
@@ -745,8 +736,12 @@ footer {
     height: 150px;
     padding-left: 30px;
   }
+  #foot {
+    width: 70%;
+  }
+
   .foot-1 h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .foot-1 p {
     font-size: 15px;
@@ -764,9 +759,6 @@ footer {
   }
   #header .nav {
     width: 75%;
-  }
-  #header .nav a:nth-child(7) {
-    display: none;
   }
   .profile img {
     width: 165px;
@@ -871,9 +863,9 @@ footer {
     flex-direction: column;
     gap: 30px;
   }
-   .about_section .info{
+  .about_section .info {
     width: 340px;
-   }
+  }
   #education {
     display: flex;
     flex-direction: column;
@@ -902,24 +894,26 @@ footer {
     width: 135px;
     padding: 9px 9px;
   }
-  .foot-1 {
-    padding-left: 20px;
-    width: 100%;
+  #foot {
+    width: 80%;
   }
   .foot-1 h1 {
-    font-size: 23px;
-    padding-right: 20px;
+    font-size: 20px;
   }
-  .foot-2 ul {
-    padding-left: 10px;
+  .foot-2 {
+    width: 40%;
+  }
+  .foot ul {
+    gap: 8px;
+  }
+  .foot ul li a {
     font-size: 14px;
-  }
-  .foot-2 ul li,
-  a {
-    font-size: 12px;
   }
   .foot-3 {
-    font-size: 14px;
+    font-size: 12px;
+  }
+   #foot ul a:nth-child(3) {
+    display: none;
   }
 }
 @media all and (max-width: 360px) {
@@ -927,14 +921,25 @@ footer {
     padding: 0 5%;
   }
   #header {
-    padding: 0 3%;
+    width: 100%;
   }
-  #header .nav {
-    width: 65%;
+  #header .nav a:nth-child(5) {
+    display: none;
   }
+   #header .nav a:nth-child(1) {
+    display: none;
+  }
+   #header .nav a:nth-child(2) {
+    display: none;
+  }
+   #header .nav a:nth-child(3) {
+    display: none;
+  }
+  
+
   .profile {
     width: 110px;
-    margin-top: -150px;
+    margin-top: -100px;
   }
   .profile img {
     width: 110px;
@@ -945,7 +950,6 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
     gap: 40px;
     padding: 70px 0;
   }
@@ -983,6 +987,22 @@ footer {
   .info p {
     font-size: 15px;
   }
+  .degree h1{
+    font-size: 20px;
+  }
+  .degree h3{
+    font-size: 17px;
+  }
+  .degree p{
+    font-size: 17px;
+  }
+   #education .education_1 h1{
+      font-size: 20px;
+  }
+  #education .education_1 ul li{
+    font-size: 14px;
+  }
+
   .my {
     padding-top: 40px;
     display: flex;
@@ -1001,24 +1021,69 @@ footer {
   .work img {
     width: 270px;
   }
+ .work h2{
+  font-size: 20px;
+ }
+ .work Span{
+  font-size: 17px;
+ }
+ .get{
+  font-size: 16px;
+  width: 160px;
+  padding: 20px 20px;
+ }
+ div .work p{
+  font-size: 220px;
+ }
   .fill-in {
-    
+    width: 100%;
+    gap: 10px;
+  }
+  .fill-in .left {
+    width: 50%;
+    gap: 30px;
+  }
+  .fill-in .left .cn {
+    width: 70%;
+  }
+  .fill-in .left .cn h4 {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .fill-in .left .cn .spn {
+    font-size: 11px;
+  }
+  .fill-in .left .cn img {
+    width: 15px;
+    height: 20px;
+  }
+  .fill-in .left iframe {
+    width: 140px;
+    height: 140px;
+  }
+  .cn .right .l {
+    min-width: 140px;
+  }
+  .dot {
+    width: 110px;
+    font-size: 14px;
+    padding: 15px 9px;
+  }
+  .area {
+    height: 80px;
+  }
+  .right .l label {
+    font-size: 12px;
+  }
+
+  #foot {
     width: 100%;
   }
-  .left .cn h4 {
-    font-size: 14px;
+  #foot .foot-2 {
+    width: 40%;
   }
-  .left .cn img {
-    width: 17px;
-    height: 18px;
+  #foot ul a:nth-child(3) {
+    display: none;
   }
-   .left{
-    padding-left: 85px;
-   }
-   .left iframe{
-    width: 190px;
-   }
-   .left .cn span{
-    font-size: 12px;
-   }
 }
